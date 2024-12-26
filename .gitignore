@@ -2,3 +2,6 @@ TestHotfixUnity/Library/*
 TestHotfixUnity/Temp/*
 TestHotfixUnity/HybridCLRData/*
 TestHotfixUnity/Logs/*
+TestHotfixUnity/yoo/DefaultPackage/CacheFiles/*
+TestHotfixUnity/TestHotfix_BackUpThisFolder_ButDontShipItWithYourGame/*
+TestHotfixUnity/TestHotfix.app

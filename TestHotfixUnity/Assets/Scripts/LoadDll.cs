@@ -33,20 +33,23 @@ public class LoadDll : MonoBehaviour
 
     IEnumerator InitYooAssets(Action onDownloadComplete)
     {
+         Debug.Log("debug InitYooAssets 1");
         // 1.初始化资源系统
         YooAssets.Initialize();
-
+        Debug.Log("debug InitYooAssets 2");
         string packageName = "DefaultPackage";
         var package = YooAssets.TryGetPackage(packageName) ?? YooAssets.CreatePackage(packageName);
         YooAssets.SetDefaultPackage(package);
         if (PlayMode == EPlayMode.EditorSimulateMode)
         {
+            Debug.Log("debug InitYooAssets 3");
             //编辑器模拟模式
-            var initParameters = new EditorSimulateModeParameters { SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline, "DefaultPackage") };
+            var initParameters = new EditorSimulateModeParameters { SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), "DefaultPackage") };
             yield return package.InitializeAsync(initParameters);
         }
         else if (PlayMode == EPlayMode.HostPlayMode)
         {
+            Debug.Log("debug InitYooAssets 4");
             //联机运行模式
             string defaultHostServer = GetHostServerURL();
             string fallbackHostServer = GetHostServerURL();
@@ -69,7 +72,7 @@ public class LoadDll : MonoBehaviour
             }
         }
 
-
+        Debug.Log("debug InitYooAssets 5");
         //2.获取资源版本
         var operation = package.UpdatePackageVersionAsync();
         yield return operation;
@@ -83,7 +86,7 @@ public class LoadDll : MonoBehaviour
 
         string packageVersion = operation.PackageVersion;
         Debug.Log($"Updated package Version : {packageVersion}");
-
+        
         //3.更新补丁清单
         // 更新成功后自动保存版本号，作为下次初始化的版本。
         // 也可以通过operation.SavePackageVersion()方法保存。
@@ -118,7 +121,7 @@ public class LoadDll : MonoBehaviour
     private string GetHostServerURL()
     {
         //模拟下载地址，8084为Nginx里面设置的端口号，项目名，平台名
-        return "http://127.0.0.1:8084/TestProject/PC";
+        return "https://public-makeitreal-cms-cn-qa.oss-cn-shenzhen.aliyuncs.com/https%3A/oss-cn-shenzhen.aliyuncs.com";
     }
 
     /// <summary>
@@ -168,11 +171,13 @@ public class LoadDll : MonoBehaviour
 
     IEnumerator Download()
     {
+        Debug.Log("debug downLoad 1");
         int downloadingMaxNum = 10;
         int failedTryAgain = 3;
         var package = YooAssets.GetPackage("DefaultPackage");
+        Debug.Log("debug downLoad 2");
         var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-
+        Debug.Log("debug downLoad 3");
         //没有需要下载的资源
         if (downloader.TotalDownloadCount == 0)
         {

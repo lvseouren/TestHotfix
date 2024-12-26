@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.24f1
+CRC: 2784411730
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f098481361d3d281fca313a802ebdfaf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bbf165f7ec4777963ec351a6d3af7d8f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1d829704d7b11f6061957696800794f9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e3213b2d6ba47457aaeca06abfc5de73, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/MyAsset/Prefab/Cube.prefab
+Dependencies:
+- /Users/anker/GitRoot/TestHotfix/TestHotfixUnity/Bundles/StandaloneOSX/DefaultPackage/OutputCache/unityshaders.bundle

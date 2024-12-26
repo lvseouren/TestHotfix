@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.tuyoogame.yooasset": "2.1.0",
     "com.code-philosophy.hybridclr": "https://gitee.com/focus-creative-games/hybridclr_unity.git",
     "com.unity.ai.navigation": "2.0.4",
     "com.unity.collab-proxy": "2.6.0",
@@ -9,6 +8,7 @@
     "com.unity.inputsystem": "1.11.1",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.render-pipelines.universal": "17.0.3",
+    "com.unity.scriptablebuildpipeline": "2.1.5",
     "com.unity.test-framework": "1.4.5",
     "com.unity.timeline": "1.8.7",
     "com.unity.ugui": "2.0.0",
@@ -47,12 +47,12 @@
     "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
-      {
-        "name": "package.openupm.com",
-        "url": "https://package.openupm.com",
-        "scopes": [
-          "com.tuyoogame.yooasset"
-        ]
-      }
-    ]
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.tuyoogame.yooasset"
+      ]
+    }
+  ]
 }
