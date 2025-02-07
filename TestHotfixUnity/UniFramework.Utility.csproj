@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>YooAsset</AssemblyName>
+    <AssemblyName>UniFramework.Utility</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -65,130 +65,14 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.24f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Interface/IPlayMode.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/AssetInfo.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/DownloadHelper.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/ManifestTools.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Services/IRemoteServices.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/YooAssetsExtension.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/QueryCachePackageHashOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/PreDownloadContentOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/UnityWebFileRequester.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/YooAssets.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/CacheHelper.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Operation/InstantiateOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Requester/IWebRequester.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/QueryCachePackageVersionOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/DownloadManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Requester/FileResumeRequest.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Requester/FileGeneralRequest.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PlayMode/WebPlayModeImpl.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DiagnosticSystem/DebugProviderInfo.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/Operation/Internal/VerifyTempFileOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Loader/DependAssetBundles.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PackageAsset.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/PersistentHelper.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Loader/BundleLoaderBase.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/DownloadStatus.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/BundledSubAssetsProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/ResourceLoader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Handle/SubAssetsHandle.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/EVerifyResult.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/RequestHelper.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Downloader/FileDownloader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/AssemblyInfo.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PlayMode/OfflinePlayModeImpl.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PlayMode/EditorSimulateModeImpl.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/BundledRawFileProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Services/IDeliveryLoadServices.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Downloader/CompletedDownloader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PackageBundle.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/OperationSystem/EOperationStatus.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Loader/VirtualBundleFileLoader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PackageManifest.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/PersistentManager.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Loader/AssetBundleWebLoader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Interface/IBundleQuery.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Requester/DownloadHandlerFileRange.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PlayMode/HostPlayModeImpl.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/BundledAssetProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/UnityWebDataRequester.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Handle/SceneHandle.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/UpdatePackageManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/PlayMode/EditorSimulateModeHelper.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Services/IDeliveryQueryServices.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/ThreadSyncContext.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Utility/BufferReader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/CompletedProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Loader/AssetBundleFileLoader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DiagnosticSystem/DebugReport.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Handle/HandleBase.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/InitializationOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Handle/AssetHandle.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Settings/YooAssetSettingsData.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/BundledSceneProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/LoadCacheManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Downloader/WebDownloader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/LoadEditorManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Operation/UnloadSceneOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/EVerifyLevel.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/Operation/ClearUnusedCacheFilesOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/DatabaseAllAssetsProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/Operation/Internal/VerifyCacheFilesOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Utility/YooUtility.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DiagnosticSystem/RemoteCommand.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/Operation/PackageCachingOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/OperationSystem/OperationSystem.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DiagnosticSystem/DebugBundleInfo.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DiagnosticSystem/RemoteDebuggerDefine.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/Operation/ClearAllCacheFilesOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Loader/RawBundleWebLoader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DiagnosticSystem/RemoteDebuggerInRuntime.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/DatabaseSceneProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/ResourcePackage.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Handle/AllAssetsHandle.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Utility/CRC32Algorithm.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/InitializeParameters.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Loader/RawBundleFileLoader.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Handle/RawFileHandle.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/QueryRemotePackageHashOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/CacheFileInfo.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/QueryBuildinPackageVersionOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/DatabaseAssetProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/ResourceManager.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Settings/YooAssetSettings.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/DownloadManager.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Utility/YooLogger.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/YooAssetsDriver.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DiagnosticSystem/DebugPackageData.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/LoadBuildinManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/OperationSystem/AsyncOperationBase.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/BundledAllAssetsProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/ProviderBase.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Services/IEncryptionServices.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/LoadRemoteManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/UnpackBuildinManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/DatabaseRawFileProvider.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Requester/AssetBundleWebRequest.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/Downloader/DownloaderBase.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/QueryRemotePackageVersionOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/OperationSystem/GameAsyncOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/DownloaderOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/ResourceAssist.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/UpdatePackageVersionOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/VerifyElement.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Services/IDecryptionServices.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Services/IBuildinQueryServices.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/DownloadSystem/UnityWebRequesterBase.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/Utility/BufferWriter.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/CacheManager.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/BundleInfo.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourcePackage/Operation/Internal/DeserializeManifestOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/CacheSystem/Operation/Internal/FindCacheFilesOperation.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/ResourceManager/Provider/DatabaseSubAssetsProvider.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.9/Space Shooter/ThirdParty/UniFramework/UniUtility/Runtime/StringConvert.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.9/Space Shooter/ThirdParty/UniFramework/UniUtility/Runtime/BitMask32.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.9/Space Shooter/ThirdParty/UniFramework/UniUtility/Runtime/UniTimer.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.9/Space Shooter/ThirdParty/UniFramework/UniUtility/Runtime/StringFormat.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.9/Space Shooter/ThirdParty/UniFramework/UniUtility/Runtime/BitMask64.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/Scripts/com.tuyoogame.yooasset/Runtime/YooAsset.asmdef" />
+    <None Include="Assets/Samples/YooAsset/2.2.9/Space Shooter/ThirdParty/UniFramework/UniUtility/Runtime/UniFramework.Utility.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

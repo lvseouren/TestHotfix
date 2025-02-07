@@ -66,11 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/HybridCLRGenerate/AOTGenericReferences.cs" />
-    <Compile Include="Assets/Scripts/LoadDll.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/ConsoleToScreen.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets/GameSetting/AssetBundleCollectorConfig.xml" />
     <None Include="Assets/HybridCLRGenerate/link.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -1190,6 +1190,10 @@
       <HintPath>Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="YooAsset">
+      <HintPath>Library/ScriptAssemblies/YooAsset.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1227,7 +1231,6 @@
     <ProjectReference Include="Unity.Rendering.LightTransport.Editor.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.Universal.Config.Runtime.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.Universal.Editor.csproj" />
-    <ProjectReference Include="YooAsset.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj" />
     <ProjectReference Include="Unity.Multiplayer.Center.Common.csproj" />
     <ProjectReference Include="Unity.TextMeshPro.csproj" />

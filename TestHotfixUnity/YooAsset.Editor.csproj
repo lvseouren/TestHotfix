@@ -111,9 +111,9 @@
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleCollector/AssetBundleCollectorGroup.cs" />
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleBuilder/BuildPipeline/RawFileBuildPipeline/BuildTasks/TaskCopyBuildinFiles_RFBP.cs" />
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleBuilder/EBuildPipeline.cs" />
+    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleCollector/AssetBundleCollectorPackage.cs" />
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleBuilder/BuildPipeline/BaseTasks/TaskCreateManifest.cs" />
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleBuilder/BuildPipeline/BuiltinBuildPipeline/BuildTasks/TaskCreateReport_BBP.cs" />
-    <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleCollector/AssetBundleCollectorPackage.cs" />
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/UIElements/UxmlLoader.cs" />
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleBuilder/BuildPipeline/RawFileBuildPipeline/BuildTasks/TaskCreateReport_RFBP.cs" />
     <Compile Include="Assets/Scripts/com.tuyoogame.yooasset/Editor/AssetBundleBuilder/BuildPipeline/ScriptableBuildPipeline/BuildTasks/TaskBuilding_SBP.cs" />
